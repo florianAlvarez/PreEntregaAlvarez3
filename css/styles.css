@@ -1,0 +1,213 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background-color: #4CAF50;
+  padding: 20px 0;
+}
+
+.main {
+  padding: 20px;
+}
+
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.navbar {
+    background-color: #3b7a57; 
+    padding: 10px 20px;
+}
+
+.navbar__brand {
+    font-family: 'Merriweather', serif;
+    color: #ffffff !important;
+    font-size: 24px;
+}
+
+.navbar__nav .nav__link {
+    color: #ffffff !important;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.carousel__item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #d0f0c0; 
+    
+
+    
+    border-radius: 8px;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #e6f2e6; 
+    
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item{
+    width:500px ;
+    height:500px ;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+.about,
+.products,
+.gallery,
+.contact {
+  text-align: center;
+}
+.about__title,
+.products__title,
+.gallery__title,
+.contact__title {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+.about__text, .about__item-description,
+.products__text,
+.products__item-description,
+.gallery__text,
+.gallery__item-description,
+.contact__text,
+.contact__item-description {
+  margin: 10px 0;
+  color: #666;
+}
+.about .products__list,
+.about .gallery__grid,
+.products .products__list,
+.products .gallery__grid,
+.gallery .products__list,
+.gallery .gallery__grid,
+.contact .products__list,
+.contact .gallery__grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+.about .products__list,
+.products .products__list,
+.gallery .products__list,
+.contact .products__list {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.about .gallery__grid,
+.products .gallery__grid,
+.gallery .gallery__grid,
+.contact .gallery__grid {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.footer {
+  background-color: #8BC34A;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form-group {
+  margin-bottom: 15px;
+}
+.contact__form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact__form-group input,
+.contact__form-group textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact__form .contact__form-submit {
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact__form .contact__form-submit:hover {
+  background-color: #3d8b40;
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel__item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .carousel__item img {
+        height: 200px;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */
